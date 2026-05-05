@@ -61,6 +61,10 @@
             padding: 15px;
             background: #f8f9fa;
             border-radius: 12px;
+            transition: transform 0.3s;
+        }
+        .contact-detail-item:hover {
+            transform: translateX(5px);
         }
         .contact-detail-item i {
             font-size: 24px;
@@ -75,6 +79,9 @@
         .contact-detail-item p, .contact-detail-item a {
             color: #555;
             text-decoration: none;
+        }
+        .contact-detail-item a:hover {
+            color: #00d9a6;
         }
         .contact-form {
             background: #f8f9fa;
@@ -121,12 +128,42 @@
         .map-container {
             border-radius: 20px;
             overflow: hidden;
-            height: 300px;
+            height: 350px;
+            background: linear-gradient(135deg, #002B5C, #00d9a6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
         }
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
+        .map-container i {
+            font-size: 60px;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .map-container h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .map-container p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 15px;
+        }
+        .map-link {
+            display: inline-block;
+            background: white;
+            color: #002B5C;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .map-link:hover {
+            background: #00d9a6;
+            color: #002B5C;
+            transform: translateY(-3px);
         }
         @media (max-width: 992px) {
             .contact-grid {
@@ -139,6 +176,15 @@
             }
             .contact-form {
                 padding: 25px;
+            }
+            .map-container {
+                height: 280px;
+            }
+            .map-container i {
+                font-size: 40px;
+            }
+            .map-container h3 {
+                font-size: 18px;
             }
         }
     </style>
@@ -240,7 +286,12 @@
     <section class="map-section">
         <div class="container">
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.852345678901!2d-3.9967!3d5.3456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjAnMzYuMCJOIDPCsDU5JzUyLjAiVw!5e0!3m2!1sfr!2sci!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Master Bronz Digital</h3>
+                <p>Abidjan, Côte d'Ivoire<br>01 BP 1234 Abidjan 01</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Abidjan+Cote+d%27Ivoire" target="_blank" class="map-link">
+                    Voir sur Google Maps →
+                </a>
             </div>
         </div>
     </section>
@@ -252,10 +303,10 @@
                     <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
                     <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
                     <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
