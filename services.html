@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Nos services - Master Bronz Digital</title>
+    <meta name="description" content="Découvrez nos services en ingénierie digitale : développement web, solutions IT, formation et consulting.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .services-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .services-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .services-hero h1 span {
+            color: #00d9a6;
+        }
+        .services-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .services-list {
+            padding: 80px 0;
+            background: white;
+        }
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 24px;
+        }
+        .service-detail.reverse {
+            direction: rtl;
+        }
+        .service-detail.reverse .service-info {
+            direction: ltr;
+        }
+        .service-info h2 {
+            font-size: 28px;
+            color: #002B5C;
+            margin-bottom: 20px;
+        }
+        .service-info h2 span {
+            color: #00d9a6;
+        }
+        .service-info p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .service-list-items {
+            list-style: none;
+            margin: 20px 0;
+        }
+        .service-list-items li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .service-list-items li i {
+            color: #00d9a6;
+            font-size: 18px;
+        }
+        .service-icon-large {
+            text-align: center;
+        }
+        .service-icon-large i {
+            font-size: 120px;
+            color: #00d9a6;
+        }
+        .cta-services {
+            background: linear-gradient(135deg, #002B5C, #00d9a6);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .cta-services h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .cta-services .btn {
+            background: white;
+            color: #002B5C;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        @media (max-width: 992px) {
+            .service-detail {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .service-detail.reverse {
+                direction: ltr;
+            }
+            .service-list-items li {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 28px;
+            }
+            .service-icon-large i {
+                font-size: 80px;
+            }
+            .cta-services h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Nos <span>services</span></h1>
+            <p>Des solutions digitales sur mesure pour accompagner votre transformation</p>
+        </div>
+    </section>
+
+    <section class="services-list">
+        <div class="container">
+            <div class="service-detail">
+                <div class="service-info">
+                    <h2><span>Développement</span> & Digitalisation</h2>
+                    <p>Nous créons des solutions digitales performantes et adaptées à vos besoins métiers.</p>
+                    <ul class="service-list-items">
+                        <li><i class="fas fa-check-circle"></i> Sites web vitrines et e-commerce</li>
+                        <li><i class="fas fa-check-circle"></i> Applications web sur mesure</li>
+                        <li><i class="fas fa-check-circle"></i> Logiciels de gestion (ERP, CRM)</li>
+                        <li><i class="fas fa-check-circle"></i> Automatisation de processus</li>
+                        <li><i class="fas fa-check-circle"></i> Maintenance et évolution</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+
+            <div class="service-detail reverse">
+                <div class="service-info">
+                    <h2><span>Solutions IT</span> & Infrastructure</h2>
+                    <p>Nous sécurisons et optimisons votre infrastructure informatique.</p>
+                    <ul class="service-list-items">
+                        <li><i class="fas fa-check-circle"></i> Installation et configuration réseau</li>
+                        <li><i class="fas fa-check-circle"></i> Maintenance informatique</li>
+                        <li><i class="fas fa-check-circle"></i> Sécurité des données</li>
+                        <li><i class="fas fa-check-circle"></i> Cloud et virtualisation</li>
+                        <li><i class="fas fa-check-circle"></i> Support technique</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large">
+                    <i class="fas fa-server"></i>
+                </div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-info">
+                    <h2><span>Formation</span> digitale</h2>
+                    <p>Nous formons vos équipes aux technologies et outils digitaux.</p>
+                    <ul class="service-list-items">
+                        <li><i class="fas fa-check-circle"></i> Développement web</li>
+                        <li><i class="fas fa-check-circle"></i> Cybersécurité</li>
+                        <li><i class="fas fa-check-circle"></i> Intelligence artificielle</li>
+                        <li><i class="fas fa-check-circle"></i> Marketing digital</li>
+                        <li><i class="fas fa-check-circle"></i> Outils collaboratifs</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+
+            <div class="service-detail reverse">
+                <div class="service-info">
+                    <h2><span>Consulting</span> & Stratégie</h2>
+                    <p>Nous vous conseillons pour définir votre stratégie digitale.</p>
+                    <ul class="service-list-items">
+                        <li><i class="fas fa-check-circle"></i> Audit digital</li>
+                        <li><i class="fas fa-check-circle"></i> Stratégie de transformation</li>
+                        <li><i class="fas fa-check-circle"></i> Accompagnement projet</li>
+                        <li><i class="fas fa-check-circle"></i> SEO et visibilité</li>
+                        <li><i class="fas fa-check-circle"></i> Analyse de données</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-services">
+        <div class="container">
+            <h2>Vous avez un projet ?</h2>
+            <p>Discutons de vos besoins et trouvons ensemble la solution idéale</p>
+            <a href="contact.html" class="btn btn-primary">DEMANDER UN DEVIS →</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

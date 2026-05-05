@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Blog - Master Bronz Digital</title>
+    <meta name="description" content="Actualités, conseils et tendances du digital.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .blog-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .blog-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .blog-hero h1 span {
+            color: #00d9a6;
+        }
+        .blog-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .blog-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+        .blog-image {
+            height: 200px;
+            background: linear-gradient(135deg, #002B5C, #00d9a6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-image i {
+            font-size: 60px;
+            color: white;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .blog-date {
+            color: #00d9a6;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .blog-content h3 {
+            font-size: 18px;
+            color: #002B5C;
+            margin-bottom: 10px;
+        }
+        .blog-content p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .blog-link {
+            color: #00d9a6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        @media (max-width: 992px) {
+            .blog-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 28px;
+            }
+            .blog-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Notre <span>blog</span></h1>
+            <p>Actualités, conseils et tendances du digital</p>
+        </div>
+    </section>
+
+    <section class="blog-grid">
+        <div class="container">
+            <div class="blog-items">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Avril 2026</span>
+                        <h3>Comment l'IA transforme les entreprises</h3>
+                        <p>Découvrez comment l'intelligence artificielle révolutionne les processus métiers et crée de nouvelles opportunités.</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">2 Avril 2026</span>
+                        <h3>5 tendances du marketing digital en 2026</h3>
+                        <p>Les stratégies à adopter pour rester compétitif dans un environnement digital en constante évolution.</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">20 Mars 2026</span>
+                        <h3>Cybersécurité : les bonnes pratiques</h3>
+                        <p>Protégez vos données et celles de vos clients avec ces conseils essentiels.</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">5 Mars 2026</span>
+                        <h3>Les frameworks web à maîtriser en 2026</h3>
+                        <p>React, Vue, Angular... lequel choisir pour vos projets ?</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Février 2026</span>
+                        <h3>Pourquoi votre entreprise a besoin d'une app mobile</h3>
+                        <p>Les avantages d'une application mobile pour booster votre activité.</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">1 Février 2026</span>
+                        <h3>SEO : les nouvelles règles du jeu</h3>
+                        <p>Comment optimiser votre site pour les moteurs de recherche en 2026.</p>
+                        <a href="#" class="blog-link">Lire la suite →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

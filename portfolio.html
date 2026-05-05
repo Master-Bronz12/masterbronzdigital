@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Nos réalisations - Master Bronz Digital</title>
+    <meta name="description" content="Découvrez nos projets : sites e-commerce, logiciels de gestion, applications mobiles et plus.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .portfolio-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .portfolio-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .portfolio-hero h1 span {
+            color: #00d9a6;
+        }
+        .portfolio-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .portfolio-grid {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-image {
+            height: 220px;
+            overflow: hidden;
+        }
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .portfolio-item:hover .portfolio-image img {
+            transform: scale(1.1);
+        }
+        .portfolio-content {
+            padding: 20px;
+        }
+        .portfolio-content h3 {
+            font-size: 18px;
+            color: #002B5C;
+            margin-bottom: 10px;
+        }
+        .portfolio-content p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .portfolio-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .portfolio-tags span {
+            background: #e9ecef;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #002B5C;
+        }
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #00d9a6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        @media (max-width: 992px) {
+            .portfolio-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .portfolio-hero h1 {
+                font-size: 28px;
+            }
+            .portfolio-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Nos <span>réalisations</span></h1>
+            <p>Des projets concrets qui font la différence</p>
+        </div>
+    </section>
+
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/we will create premium web site design in your business_.jpg" alt="Site e-commerce">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Site E-commerce</h3>
+                        <p>Boutique en ligne moderne avec paiement intégré</p>
+                        <div class="portfolio-tags">
+                            <span>E-commerce</span>
+                            <span>WooCommerce</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/Logiciel de Gestion des Stocks et Flux, Solution Mobile et Cloud - Monstock.jpg" alt="Logiciel de gestion">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Logiciel de Gestion</h3>
+                        <p>Application de gestion pour école intelligente</p>
+                        <div class="portfolio-tags">
+                            <span>Logiciel métier</span>
+                            <span>ERP</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/Portal online efectiva.jpg" alt="Site vitrine">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Site Vitrine</h3>
+                        <p>Site moderne pour clinique médicale</p>
+                        <div class="portfolio-tags">
+                            <span>Vitrine</span>
+                            <span>SEO</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/Sleek food app UI kit_ User-friendly design for seamless delivery_.jpg" alt="Application mobile">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Application Mobile</h3>
+                        <p>App de livraison rapide</p>
+                        <div class="portfolio-tags">
+                            <span>Mobile</span>
+                            <span>React Native</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/Dashboard ui_ux _ Finance Management _ Дашборд - Kristi Kamlykova.jpg" alt="Dashboard analytics">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Tableau de bord temps réel</p>
+                        <div class="portfolio-tags">
+                            <span>Data</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="./image/Modèle CRM personnel pour Airtable _ Gestionnaire de contacts pour développer et organiser votre réseau.jpg" alt="CRM sur mesure">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>CRM sur mesure</h3>
+                        <p>Gestion client optimisée</p>
+                        <div class="portfolio-tags">
+                            <span>CRM</span>
+                            <span>Gestion</span>
+                        </div>
+                        <a href="#" class="portfolio-link">Voir le projet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

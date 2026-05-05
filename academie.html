@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Académie - Master Bronz Digital</title>
+    <meta name="description" content="Formations pratiques en informatique, développement, cybersécurité et IA.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .academie-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .academie-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .academie-hero h1 span {
+            color: #00d9a6;
+        }
+        .academie-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .formations {
+            padding: 80px 0;
+            background: white;
+        }
+        .formations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .formation-card {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .formation-card:hover {
+            transform: translateY(-10px);
+        }
+        .formation-icon {
+            font-size: 50px;
+            color: #00d9a6;
+            margin-bottom: 20px;
+        }
+        .formation-card h3 {
+            font-size: 20px;
+            color: #002B5C;
+            margin-bottom: 15px;
+        }
+        .formation-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .formation-duration {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #002B5C;
+            margin-bottom: 15px;
+        }
+        .formation-btn {
+            display: inline-block;
+            background: #002B5C;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+        .formation-btn:hover {
+            background: #00d9a6;
+            color: #002B5C;
+        }
+        .why-academie {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .why-card {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+        }
+        .why-card i {
+            font-size: 40px;
+            color: #00d9a6;
+            margin-bottom: 15px;
+        }
+        .why-card h4 {
+            font-size: 18px;
+            color: #002B5C;
+            margin-bottom: 10px;
+        }
+        .why-card p {
+            color: #666;
+            font-size: 13px;
+        }
+        @media (max-width: 992px) {
+            .formations-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .academie-hero h1 {
+                font-size: 28px;
+            }
+            .formations-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <section class="academie-hero">
+        <div class="container">
+            <h1>Master Bronz <span>Académie</span></h1>
+            <p>Formez-vous aux métiers du digital avec des professionnels</p>
+        </div>
+    </section>
+
+    <section class="formations">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Nos formations</span></h2>
+                <p>Des programmes pratiques pour booster vos compétences</p>
+            </div>
+            <div class="formations-grid">
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-code"></i></div>
+                    <h3>Développement Web</h3>
+                    <p>Maîtrisez HTML, CSS, JavaScript, React et les frameworks modernes.</p>
+                    <span class="formation-duration">📅 3 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersécurité</h3>
+                    <p>Apprenez à protéger les systèmes et données des entreprises.</p>
+                    <span class="formation-duration">📅 2 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Découvrez le machine learning et l'IA appliquée aux besoins métiers.</p>
+                    <span class="formation-duration">📅 2 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Marketing Digital</h3>
+                    <p>Stratégies digitales, SEO, réseaux sociaux et publicité en ligne.</p>
+                    <span class="formation-duration">📅 1.5 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Science</h3>
+                    <p>Analyse de données et visualisation avec Python et SQL.</p>
+                    <span class="formation-duration">📅 2.5 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+                <div class="formation-card">
+                    <div class="formation-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Développement Mobile</h3>
+                    <p>Créez des applications iOS et Android avec Flutter.</p>
+                    <span class="formation-duration">📅 2 mois</span>
+                    <div><a href="contact.html" class="formation-btn">S'inscrire →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-academie">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Pourquoi nous choisir ?</span></h2>
+                <p>Une formation de qualité avec des experts du secteur</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h4>Formateurs experts</h4>
+                    <p>Des professionnels en activité</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Approche pratique</h4>
+                    <p>80% de pratique, 20% de théorie</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certification</h4>
+                    <p>Attestation de formation reconnue</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Accompagnement</h4>
+                    <p>Suivi personnalisé après formation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

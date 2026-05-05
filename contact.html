@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Contact - Master Bronz Digital</title>
+    <meta name="description" content="Contactez Master Bronz Digital pour vos projets digitaux.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .contact-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .contact-hero h1 span {
+            color: #00d9a6;
+        }
+        .contact-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .contact-section {
+            padding: 80px 0;
+            background: white;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info h2 {
+            font-size: 28px;
+            color: #002B5C;
+            margin-bottom: 20px;
+        }
+        .contact-info h2 span {
+            color: #00d9a6;
+        }
+        .contact-info p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .contact-details {
+            margin-top: 30px;
+        }
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .contact-detail-item i {
+            font-size: 24px;
+            color: #00d9a6;
+            width: 40px;
+        }
+        .contact-detail-item h4 {
+            font-size: 16px;
+            color: #002B5C;
+            margin-bottom: 5px;
+        }
+        .contact-detail-item p, .contact-detail-item a {
+            color: #555;
+            text-decoration: none;
+        }
+        .contact-form {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #00d9a6;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: #002B5C;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: all 0.3s;
+        }
+        .submit-btn:hover {
+            background: #00d9a6;
+            color: #002B5C;
+        }
+        .map-section {
+            padding: 0 0 80px;
+        }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 300px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 28px;
+            }
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1><span>Contactez</span>-nous</h1>
+            <p>Parlons de votre projet et construisons ensemble votre succès digital</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Parlons de <span>votre projet</span></h2>
+                    <p>Que vous ayez un projet précis ou simplement besoin de conseils, notre équipe est là pour vous accompagner. Remplissez le formulaire ou contactez-nous directement.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Notre adresse</h4>
+                                <p>Abidjan, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p><a href="tel:+2250102008340">+225 01 02 00 83 40</a> / <a href="tel:+2250702888506">+225 07 02 88 85 06</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:masterbronzdigital12@gmail.com">masterbronzdigital12@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lundi - Vendredi: 8h00 - 18h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="sendContact(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="formation">Inscription formation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer le message →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.852345678901!2d-3.9967!3d5.3456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjAnMzYuMCJOIDPCsDU5JzUyLjAiVw!5e0!3m2!1sfr!2sci!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        function sendContact(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert(`Merci ${name} ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.`);
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Veuillez remplir tous les champs obligatoires.');
+            }
+        }
+    </script>
+</body>
+
+</html>

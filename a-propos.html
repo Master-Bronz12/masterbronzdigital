@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>À propos - Master Bronz Digital</title>
+    <meta name="description" content="Découvrez Master Bronz Digital, votre partenaire en ingénierie digitale. Expertise, innovation et accompagnement sur mesure.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Styles spécifiques à la page à propos */
+        .about-hero {
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3e 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        .about-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .about-hero h1 span {
+            color: #00d9a6;
+        }
+        .about-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .about-content {
+            padding: 80px 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+        .about-text h2 {
+            font-size: 28px;
+            color: #002B5C;
+            margin-bottom: 20px;
+        }
+        .about-text h2 span {
+            color: #00d9a6;
+        }
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .values-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .value-card {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        .value-card i {
+            font-size: 40px;
+            color: #00d9a6;
+            margin-bottom: 20px;
+        }
+        .value-card h3 {
+            font-size: 20px;
+            color: #002B5C;
+            margin-bottom: 10px;
+        }
+        .value-card p {
+            color: #666;
+            font-size: 14px;
+        }
+        .team-section {
+            padding: 80px 0;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .team-card {
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        .team-image {
+            height: 250px;
+            background: linear-gradient(135deg, #002B5C, #00d9a6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-image i {
+            font-size: 80px;
+            color: white;
+        }
+        .team-card h4 {
+            font-size: 20px;
+            color: #002B5C;
+            margin: 20px 0 5px;
+        }
+        .team-card p {
+            color: #666;
+            padding: 0 20px 20px;
+            font-size: 14px;
+        }
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 28px;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"><a href="index.html"><img src="./image/logo.png" alt="Master Bronz Digital"></a></div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Réalisations</a>
+                <a href="academie.html">Académie</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <button class="head-btn-mobile">Devis gratuit</button>
+            </nav>
+            <button class="head-btn">Devis gratuit</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>À propos de <span>Master Bronz Digital</span></h1>
+            <p>L'ingénierie digitale au service de votre croissance depuis 2018</p>
+        </div>
+    </section>
+
+    <!-- Contenu principal -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Qui sommes-<span>nous ?</span></h2>
+                    <p>Master Bronz Digital est une agence d'ingénierie digitale basée à Abidjan, Côte d'Ivoire. Depuis notre création, nous accompagnons les entreprises et institutions dans leur transformation digitale.</p>
+                    <p>Notre mission est de fournir des solutions technologiques innovantes, sur mesure et accessibles, pour aider nos clients à atteindre leurs objectifs de croissance.</p>
+                    <p>Avec une équipe de passionnés, nous combinons expertise technique et vision stratégique pour créer des solutions qui font la différence.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./image/Fond4.jpg" alt="Master Bronz Digital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos valeurs -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Nos valeurs</span></h2>
+                <p>Ce qui nous guide au quotidien</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Nous restons constamment à la pointe des technologies pour vous offrir le meilleur.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Confiance</h3>
+                    <p>La transparence et l'honnêteté sont au cœur de nos relations clients.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance</h3>
+                    <p>Nous mesurons notre succès à celui de nos clients.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passion</h3>
+                    <p>Nous aimons ce que nous faisons et cela se ressent dans nos réalisations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre équipe -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Notre équipe</span></h2>
+                <p>Des experts passionnés à votre service</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h4>KOUASSI A.</h4>
+                    <p>CEO & Fondateur</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h4>DR. YAO M.</h4>
+                    <p>Directeur Technique</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h4>KONÉ B.</h4>
+                    <p>Lead Développeur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
+                    <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Réalisations</a></li>
+                        <li><a href="academie.html">Académie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="services.html">Développement web</a></li>
+                        <li><a href="services.html">Solutions IT</a></li>
+                        <li><a href="academie.html">Formation digitale</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+2250102008340">+225 01 02 00 83 40</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:masterbronzdigital12@gmail.com">contact@masterbronz.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Votre email">
+                        <button onclick="subscribeNewsletter()">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
