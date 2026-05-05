@@ -165,9 +165,12 @@
             color: #002B5C;
             transform: translateY(-3px);
         }
+        
+        /* ========== RESPONSIVE - 2 COLONNES SUR MOBILE ========== */
         @media (max-width: 992px) {
             .contact-grid {
                 grid-template-columns: 1fr;
+                gap: 30px;
             }
         }
         @media (max-width: 768px) {
@@ -177,6 +180,25 @@
             .contact-form {
                 padding: 25px;
             }
+            .contact-info h2 {
+                font-size: 24px;
+            }
+            .contact-info p {
+                font-size: 13px;
+            }
+            .contact-detail-item {
+                padding: 12px;
+            }
+            .contact-detail-item i {
+                font-size: 20px;
+                width: 30px;
+            }
+            .contact-detail-item h4 {
+                font-size: 14px;
+            }
+            .contact-detail-item p {
+                font-size: 12px;
+            }
             .map-container {
                 height: 280px;
             }
@@ -185,6 +207,50 @@
             }
             .map-container h3 {
                 font-size: 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-info h2 {
+                font-size: 20px;
+            }
+            .contact-info p {
+                font-size: 12px;
+            }
+            .contact-detail-item {
+                padding: 10px;
+            }
+            .contact-detail-item i {
+                font-size: 18px;
+            }
+            .contact-detail-item h4 {
+                font-size: 13px;
+            }
+            .contact-detail-item p {
+                font-size: 11px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+            .form-group input, .form-group select, .form-group textarea {
+                padding: 10px 12px;
+                font-size: 12px;
+            }
+            .submit-btn {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+            .map-container {
+                height: 240px;
+            }
+            .map-container i {
+                font-size: 30px;
+            }
+            .map-container h3 {
+                font-size: 16px;
+            }
+            .map-link {
+                padding: 8px 20px;
+                font-size: 12px;
             }
         }
     </style>
@@ -303,10 +369,10 @@
                     <div class="footer-logo"><img src="./image/logo.png" alt="Master Bronz Digital"></div>
                     <p class="footer-description">L'ingénierie digitale au service de votre croissance.</p>
                     <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">

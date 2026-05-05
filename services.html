@@ -98,7 +98,13 @@
             color: #002B5C;
             margin-top: 20px;
             display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
         }
+        
+        /* ========== RESPONSIVE - 2 COLONNES SUR MOBILE ========== */
         @media (max-width: 992px) {
             .service-detail {
                 grid-template-columns: 1fr;
@@ -120,6 +126,34 @@
             }
             .cta-services h2 {
                 font-size: 24px;
+            }
+            .service-list-items li {
+                font-size: 13px;
+            }
+            .service-info h2 {
+                font-size: 22px;
+            }
+            .service-info p {
+                font-size: 13px;
+            }
+        }
+        @media (max-width: 480px) {
+            .service-detail {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            .service-info h2 {
+                font-size: 18px;
+            }
+            .service-info p {
+                font-size: 12px;
+            }
+            .service-list-items li {
+                font-size: 11px;
+                padding: 5px 0;
+            }
+            .service-icon-large i {
+                font-size: 60px;
             }
         }
     </style>
@@ -227,7 +261,7 @@
         <div class="container">
             <h2>Vous avez un projet ?</h2>
             <p>Discutons de vos besoins et trouvons ensemble la solution idéale</p>
-            <a href="contact.html" class="btn btn-primary">DEMANDER UN DEVIS →</a>
+            <a href="contact.html" class="btn">DEMANDER UN DEVIS →</a>
         </div>
     </section>
 

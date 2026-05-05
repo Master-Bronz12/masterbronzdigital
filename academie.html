@@ -116,12 +116,16 @@
             color: #666;
             font-size: 13px;
         }
+        
+        /* ========== RESPONSIVE - 2 COLONNES SUR MOBILE ========== */
         @media (max-width: 992px) {
             .formations-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
             .why-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
         }
         @media (max-width: 768px) {
@@ -129,10 +133,78 @@
                 font-size: 28px;
             }
             .formations-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .formation-card {
+                padding: 20px 15px;
+            }
+            .formation-icon {
+                font-size: 35px;
+            }
+            .formation-card h3 {
+                font-size: 16px;
+            }
+            .formation-card p {
+                font-size: 12px;
             }
             .why-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .why-card {
+                padding: 20px 15px;
+            }
+            .why-card i {
+                font-size: 30px;
+            }
+            .why-card h4 {
+                font-size: 15px;
+            }
+            .why-card p {
+                font-size: 11px;
+            }
+        }
+        @media (max-width: 480px) {
+            .formations-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .formation-card {
+                padding: 15px 10px;
+            }
+            .formation-icon {
+                font-size: 28px;
+            }
+            .formation-card h3 {
+                font-size: 13px;
+            }
+            .formation-card p {
+                font-size: 10px;
+            }
+            .formation-duration {
+                font-size: 9px;
+                padding: 3px 10px;
+            }
+            .formation-btn {
+                font-size: 10px;
+                padding: 6px 15px;
+            }
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .why-card {
+                padding: 15px 10px;
+            }
+            .why-card i {
+                font-size: 24px;
+            }
+            .why-card h4 {
+                font-size: 13px;
+            }
+            .why-card p {
+                font-size: 10px;
             }
         }
     </style>

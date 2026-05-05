@@ -83,9 +83,12 @@
             font-weight: 600;
             font-size: 13px;
         }
+        
+        /* ========== RESPONSIVE - 2 COLONNES SUR MOBILE ========== */
         @media (max-width: 992px) {
             .blog-items {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
         }
         @media (max-width: 768px) {
@@ -93,7 +96,51 @@
                 font-size: 28px;
             }
             .blog-items {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .blog-image {
+                height: 140px;
+            }
+            .blog-image i {
+                font-size: 40px;
+            }
+            .blog-content {
+                padding: 15px;
+            }
+            .blog-content h3 {
+                font-size: 14px;
+            }
+            .blog-content p {
+                font-size: 11px;
+            }
+            .blog-date {
+                font-size: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .blog-items {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .blog-image {
+                height: 110px;
+            }
+            .blog-image i {
+                font-size: 30px;
+            }
+            .blog-content {
+                padding: 12px;
+            }
+            .blog-content h3 {
+                font-size: 12px;
+            }
+            .blog-content p {
+                font-size: 9px;
+                margin-bottom: 8px;
+            }
+            .blog-link {
+                font-size: 10px;
             }
         }
     </style>
@@ -135,7 +182,7 @@
                     <div class="blog-content">
                         <span class="blog-date">15 Avril 2026</span>
                         <h3>Comment l'IA transforme les entreprises</h3>
-                        <p>Découvrez comment l'intelligence artificielle révolutionne les processus métiers et crée de nouvelles opportunités.</p>
+                        <p>Découvrez comment l'intelligence artificielle révolutionne les processus métiers.</p>
                         <a href="#" class="blog-link">Lire la suite →</a>
                     </div>
                 </div>
@@ -146,7 +193,7 @@
                     <div class="blog-content">
                         <span class="blog-date">2 Avril 2026</span>
                         <h3>5 tendances du marketing digital en 2026</h3>
-                        <p>Les stratégies à adopter pour rester compétitif dans un environnement digital en constante évolution.</p>
+                        <p>Les stratégies à adopter pour rester compétitif.</p>
                         <a href="#" class="blog-link">Lire la suite →</a>
                     </div>
                 </div>
@@ -157,7 +204,7 @@
                     <div class="blog-content">
                         <span class="blog-date">20 Mars 2026</span>
                         <h3>Cybersécurité : les bonnes pratiques</h3>
-                        <p>Protégez vos données et celles de vos clients avec ces conseils essentiels.</p>
+                        <p>Protégez vos données avec ces conseils essentiels.</p>
                         <a href="#" class="blog-link">Lire la suite →</a>
                     </div>
                 </div>
@@ -168,7 +215,7 @@
                     <div class="blog-content">
                         <span class="blog-date">5 Mars 2026</span>
                         <h3>Les frameworks web à maîtriser en 2026</h3>
-                        <p>React, Vue, Angular... lequel choisir pour vos projets ?</p>
+                        <p>React, Vue, Angular... lequel choisir ?</p>
                         <a href="#" class="blog-link">Lire la suite →</a>
                     </div>
                 </div>
@@ -190,7 +237,7 @@
                     <div class="blog-content">
                         <span class="blog-date">1 Février 2026</span>
                         <h3>SEO : les nouvelles règles du jeu</h3>
-                        <p>Comment optimiser votre site pour les moteurs de recherche en 2026.</p>
+                        <p>Comment optimiser votre site pour les moteurs de recherche.</p>
                         <a href="#" class="blog-link">Lire la suite →</a>
                     </div>
                 </div>
