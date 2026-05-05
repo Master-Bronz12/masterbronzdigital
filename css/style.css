@@ -1224,7 +1224,7 @@ nav a:hover::after {
     color: #00d9a6;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE - 2 COLONNES SUR TABLETTE ET MOBILE ========== */
 
 /* Tablette */
 @media (max-width: 1024px) {
@@ -1233,12 +1233,14 @@ nav a:hover::after {
         flex-direction: column;
     }
 
+    /* Services et Offres : 2 colonnes sur tablette */
     .services-grid,
     .offers-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
+    /* Footer : 3 colonnes sur tablette */
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1256,7 +1258,7 @@ nav a:hover::after {
     }
 }
 
-/* Mobile - CORRECTION DÉFILEMENT HORIZONTAL */
+/* Mobile - 2 COLONNES POUR SERVICES, OFFRES ET FOOTER */
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
@@ -1390,7 +1392,7 @@ nav a:hover::after {
         font-size: 8px;
     }
 
-    /* Services - 2 colonnes avec largeur fixe */
+    /* SERVICES : 2 COLONNES SUR MOBILE */
     .services {
         padding: 40px 0;
     }
@@ -1401,35 +1403,30 @@ nav a:hover::after {
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
         width: 100%;
     }
 
     .service-card {
-        padding: 10px 8px;
+        padding: 12px 8px;
         width: 100%;
         min-width: 0;
+        text-align: center;
     }
-
-    .service-icon {
-        font-size: 18px;
-        margin-bottom: 6px;
-    }
-
+    
     .service-card h3 {
-        font-size: 10px;
+        font-size: 11px;
     }
-
+    
     .service-card p {
         font-size: 9px;
-        margin-bottom: 6px;
     }
-
+    
     .service-btn {
-        font-size: 8px;
-        padding: 3px 8px;
+        align-self: center;
     }
 
+    /* WHY CHOOSE US */
     .section-title-left {
         font-size: 18px;
         text-align: center;
@@ -1463,7 +1460,7 @@ nav a:hover::after {
         text-align: center;
     }
 
-    /* Offres - 2 colonnes */
+    /* OFFRES : 2 COLONNES SUR MOBILE */
     .offers {
         padding: 40px 0;
     }
@@ -1474,33 +1471,34 @@ nav a:hover::after {
 
     .offers-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
         width: 100%;
     }
 
     .offer-card {
-        padding: 10px 8px;
+        padding: 12px 8px;
         width: 100%;
         min-width: 0;
     }
 
     .offer-card h3 {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .price {
-        font-size: 14px;
-        margin: 5px 0;
+        font-size: 15px;
+        margin: 6px 0;
     }
 
     .offer-card li {
-        font-size: 9px;
+        font-size: 10px;
         padding: 3px 0;
+        text-align: center;
     }
 
     .offer-btn {
-        font-size: 9px;
-        padding: 5px 8px;
+        font-size: 10px;
+        padding: 6px 10px;
         margin-top: 8px;
     }
 
@@ -1518,15 +1516,15 @@ nav a:hover::after {
     }
 
     .custom-solution-card h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .custom-solution-card h3 {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .custom-solution-card p {
-        font-size: 11px;
+        font-size: 12px;
         margin-bottom: 15px;
     }
 
@@ -1548,7 +1546,7 @@ nav a:hover::after {
     }
 
     .realisations-title {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .realisations-subtitle {
@@ -1560,7 +1558,7 @@ nav a:hover::after {
     }
 
     .real-image {
-        height: 140px;
+        height: 150px;
     }
 
     /* Trust section */
@@ -1625,7 +1623,7 @@ nav a:hover::after {
         font-size: 16px;
     }
 
-    /* Footer - 2 colonnes */
+    /* FOOTER : 2 COLONNES SUR MOBILE (NEWSLETTER INCLUSE) */
     .footer {
         padding: 40px 0 20px;
     }
@@ -1659,9 +1657,9 @@ nav a:hover::after {
     }
 
     .footer-social a {
-        width: 26px;
-        height: 26px;
-        font-size: 11px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
     }
 
     .footer-col ul li a {
@@ -1696,7 +1694,7 @@ nav a:hover::after {
     }
 }
 
-/* Petit mobile - 1 colonne pour tout */
+/* Petit mobile (max-width 480px) - 1 colonne pour tout */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 22px;
@@ -1710,11 +1708,6 @@ nav a:hover::after {
     
     .service-card {
         padding: 12px;
-        text-align: center;
-    }
-    
-    .service-btn {
-        align-self: center;
     }
 
     /* Offres - 1 colonne */
@@ -1725,6 +1718,10 @@ nav a:hover::after {
 
     .offer-card {
         padding: 12px;
+    }
+    
+    .offer-card li {
+        text-align: left;
     }
 
     /* Footer - 1 colonne */
@@ -1776,7 +1773,7 @@ nav a:hover::after {
     }
 }
 
-/* ========== CORRECTION SUPPLÉMENTAIRE DÉFILEMENT ========== */
+/* ========== CORRECTION SUPPLÉMENTAIRE ========== */
 img, video, iframe {
     max-width: 100%;
     height: auto;
