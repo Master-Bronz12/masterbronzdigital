@@ -10,6 +10,7 @@ body {
     color: #333;
     background: white;
     overflow-x: hidden;
+    width: 100%;
 }
 
 span {
@@ -54,16 +55,16 @@ header.scrolled {
     height: 50px;
 }
 
-/* Menu burger */
+/* Menu burger - CORRIGÉ */
 .menu-toggle {
     display: none;
     background: transparent;
     border: none;
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     cursor: pointer;
     z-index: 1001;
-    padding: 5px 10px;
+    padding: 8px 12px;
 }
 
 .head-btn-mobile {
@@ -294,6 +295,7 @@ nav a:hover::after {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Services Section */
@@ -1267,7 +1269,7 @@ nav a:hover::after {
 
 /* ========== RESPONSIVE ========== */
 
-/* Tablette (max-width 1024px) */
+/* Tablette */
 @media (max-width: 1024px) {
     .services-wrapper,
     .offers-wrapper {
@@ -1297,30 +1299,57 @@ nav a:hover::after {
     }
 }
 
-/* Mobile (max-width 768px) */
+/* Mobile - CORRIGÉ */
 @media (max-width: 768px) {
-    /* Header mobile - Menu burger */
+    /* Header */
+    .header-content {
+        padding: 12px 16px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    /* Menu burger - CORRIGÉ : s'affiche correctement */
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1001;
+        padding: 8px;
+        width: 44px;
+        height: 44px;
+        margin-left: auto;
+    }
+    
+    .menu-toggle i {
+        font-size: 22px;
+        color: white;
     }
 
+    /* Navigation mobile */
     nav {
         position: fixed;
-        top: 70px;
+        top: 68px;
         left: -100%;
         width: 80%;
         max-width: 300px;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 68px);
         background: rgba(6, 0, 70, 0.98);
         backdrop-filter: blur(10px);
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-start;
-        padding: 30px 20px;
-        transition: left 0.3s ease-in-out;
+        padding: 20px;
+        transition: left 0.3s ease;
         z-index: 999;
-        gap: 10px;
-        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
+        gap: 5px;
+        border-radius: 0 12px 12px 0;
     }
 
     nav.active {
@@ -1329,9 +1358,18 @@ nav a:hover::after {
 
     nav a {
         font-size: 16px;
-        padding: 12px 15px;
+        padding: 12px 16px;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        border-radius: 8px;
+    }
+    
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    nav a::after {
+        display: none;
     }
 
     .head-btn {
@@ -1349,14 +1387,14 @@ nav a:hover::after {
         margin-top: 20px;
         cursor: pointer;
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* Hero mobile */
     .hero {
         align-items: center;
         text-align: center;
-        padding: 100px 20px 60px;
+        padding: 100px 16px 60px;
     }
 
     .hero-content {
@@ -1394,31 +1432,44 @@ nav a:hover::after {
     }
 
     .stat-item-hero {
-        min-width: 85px;
-        padding: 8px 12px;
+        min-width: 80px;
+        padding: 8px 10px;
     }
 
     .stat-number-hero {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    
+    .stat-label-hero {
+        font-size: 9px;
     }
 
-    /* Services - 2 colonnes sur mobile */
+    /* Services - 2 colonnes */
     .services {
         padding: 40px 0;
+    }
+    
+    .services-wrapper {
+        gap: 30px;
+    }
+    
+    .services-left,
+    .services-right {
+        flex: auto;
     }
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 12px;
     }
 
     .service-card {
-        padding: 15px 10px;
+        padding: 12px 8px;
     }
 
     .service-icon {
-        font-size: 22px;
-        margin-bottom: 8px;
+        font-size: 20px;
+        margin-bottom: 6px;
     }
 
     .service-card h3 {
@@ -1427,17 +1478,18 @@ nav a:hover::after {
     }
 
     .service-card p {
-        font-size: 10px;
-        margin-bottom: 10px;
+        font-size: 9px;
+        margin-bottom: 8px;
+        line-height: 1.3;
     }
 
     .service-btn {
         font-size: 9px;
-        padding: 4px 10px;
+        padding: 4px 8px;
     }
 
     .section-title-left {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -1450,56 +1502,68 @@ nav a:hover::after {
     .why-us {
         margin-top: 30px;
         text-align: center;
+        padding: 20px;
     }
 
     .why-us h2 {
         text-align: center;
+        font-size: 18px;
     }
 
     .why-us li {
         justify-content: center;
+        text-align: center;
     }
 
-    /* Offres - 2 colonnes sur mobile */
+    /* Offres - 2 colonnes */
     .offers {
         padding: 40px 0;
+    }
+    
+    .offers-wrapper {
+        gap: 30px;
+    }
+    
+    .offers-left,
+    .offers-right {
+        flex: auto;
     }
 
     .offers-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 12px;
     }
 
     .offer-card {
-        padding: 15px 10px;
+        padding: 12px 8px;
     }
 
     .offer-card h3 {
-        font-size: 14px;
-        margin-bottom: 5px;
+        font-size: 13px;
+        margin-bottom: 4px;
     }
 
     .price {
-        font-size: 16px;
-        margin: 8px 0;
+        font-size: 14px;
+        margin: 6px 0;
     }
 
     .offer-card li {
-        font-size: 10px;
-        padding: 3px 0;
+        font-size: 9px;
+        padding: 2px 0;
     }
 
     .offer-btn {
-        font-size: 10px;
-        padding: 6px 10px;
+        font-size: 9px;
+        padding: 6px 8px;
         margin-top: 8px;
     }
 
     .popular-badge {
         font-size: 8px;
-        padding: 2px 8px;
-        top: -8px;
-        right: 10px;
+        padding: 2px 6px;
+        top: -6px;
+        right: 6px;
     }
 
     .custom-solution-card {
@@ -1509,7 +1573,16 @@ nav a:hover::after {
     }
 
     .custom-solution-card h2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    
+    .custom-solution-card h3 {
+        font-size: 16px;
+    }
+    
+    .custom-solution-card p {
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 
     /* Réalisations */
@@ -1521,6 +1594,7 @@ nav a:hover::after {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 15px;
     }
 
     .realisations-header-left {
@@ -1528,7 +1602,11 @@ nav a:hover::after {
     }
 
     .realisations-title {
-        font-size: 24px;
+        font-size: 22px;
+    }
+    
+    .realisations-subtitle {
+        font-size: 12px;
     }
 
     .carousel-slide {
@@ -1536,12 +1614,16 @@ nav a:hover::after {
     }
 
     .real-image {
-        height: 180px;
+        height: 160px;
     }
 
     /* Trust section */
     .trust-cta-section {
         padding: 40px 0;
+    }
+    
+    .trust-wrapper {
+        gap: 30px;
     }
 
     .final-stats {
@@ -1550,17 +1632,21 @@ nav a:hover::after {
     }
 
     .final-stats .stat-item {
-        min-width: 80px;
+        min-width: 70px;
         padding: 12px 8px;
     }
 
     .final-stats .stat-item h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .testimonial-card-carousel {
         flex: 0 0 200px;
         padding: 10px;
+    }
+    
+    .testimonial-text {
+        font-size: 10px;
     }
 
     .bottom-cta-box {
@@ -1580,8 +1666,16 @@ nav a:hover::after {
     .cta-features {
         justify-content: center;
     }
+    
+    .bottom-cta-subtitle {
+        font-size: 13px;
+    }
+    
+    .bottom-cta-title {
+        font-size: 18px;
+    }
 
-    /* Footer - 2 colonnes sur mobile */
+    /* Footer - 2 colonnes */
     .footer {
         padding: 40px 0 20px;
     }
@@ -1589,9 +1683,13 @@ nav a:hover::after {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
-        text-align: left;
     }
 
+    .footer-col h4 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
     .footer-col h4::after {
         left: 0;
         transform: none;
@@ -1599,7 +1697,7 @@ nav a:hover::after {
     }
 
     .footer-logo img {
-        height: 40px;
+        height: 35px;
     }
 
     .footer-description {
@@ -1609,22 +1707,20 @@ nav a:hover::after {
 
     .footer-social {
         justify-content: flex-start;
-        gap: 10px;
+        gap: 8px;
     }
 
     .footer-social a {
-        width: 30px;
-        height: 30px;
-        font-size: 13px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
     }
 
     .footer-col ul li a {
-        justify-content: flex-start;
         font-size: 11px;
     }
 
     .footer-contact li {
-        justify-content: flex-start;
         font-size: 11px;
         gap: 8px;
     }
@@ -1652,22 +1748,26 @@ nav a:hover::after {
     }
 }
 
-/* Petit mobile (max-width 480px) */
+/* Petit mobile */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 24px;
     }
 
     .stat-item-hero {
-        min-width: 75px;
-        padding: 6px 10px;
+        min-width: 70px;
+        padding: 6px 8px;
     }
 
     .stat-number-hero {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    
+    .stat-label-hero {
+        font-size: 8px;
     }
 
-    /* Services - 2 colonnes plus compactes */
+    /* Services - 2 colonnes compactes */
     .services-grid {
         gap: 10px;
     }
@@ -1677,7 +1777,7 @@ nav a:hover::after {
     }
 
     .service-icon {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .service-card h3 {
@@ -1685,15 +1785,15 @@ nav a:hover::after {
     }
 
     .service-card p {
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .service-btn {
         font-size: 8px;
-        padding: 3px 8px;
+        padding: 3px 6px;
     }
 
-    /* Offres - 1 colonne sur très petit mobile (optionnel mais souvent mieux) */
+    /* Offres - 1 colonne (meilleur pour très petit écran) */
     .offers-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -1715,7 +1815,7 @@ nav a:hover::after {
         font-size: 11px;
     }
 
-    /* Footer - 1 colonne sur très petit mobile */
+    /* Footer - 1 colonne */
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1743,7 +1843,7 @@ nav a:hover::after {
     }
 
     .realisations-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .final-stats {
@@ -1751,7 +1851,7 @@ nav a:hover::after {
     }
 
     .bottom-cta-title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .cta-features {
@@ -1760,15 +1860,7 @@ nav a:hover::after {
     }
 }
 
-/* Cache les éléments mobiles sur desktop */
-.menu-toggle {
-    display: none;
-}
-
-.head-btn-mobile {
-    display: none;
-}
-
+/* Desktop - cache les éléments mobiles */
 @media (min-width: 769px) {
     .menu-toggle {
         display: none !important;
