@@ -1233,14 +1233,12 @@ nav a:hover::after {
         flex-direction: column;
     }
 
-    /* Services et Offres : 2 colonnes sur tablette */
     .services-grid,
     .offers-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    /* Footer : 3 colonnes sur tablette */
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1280,7 +1278,6 @@ nav a:hover::after {
         height: 35px;
     }
     
-    /* Menu burger */
     .menu-toggle {
         display: flex;
         align-items: center;
@@ -1336,7 +1333,6 @@ nav a:hover::after {
         font-size: 14px;
     }
 
-    /* Hero */
     .hero {
         padding: 80px 12px 50px;
         text-align: center;
@@ -1392,7 +1388,7 @@ nav a:hover::after {
         font-size: 8px;
     }
 
-    /* SERVICES : 2 COLONNES SUR MOBILE */
+    /* SERVICES : 2 COLONNES */
     .services {
         padding: 40px 0;
     }
@@ -1426,7 +1422,6 @@ nav a:hover::after {
         align-self: center;
     }
 
-    /* WHY CHOOSE US */
     .section-title-left {
         font-size: 18px;
         text-align: center;
@@ -1460,7 +1455,7 @@ nav a:hover::after {
         text-align: center;
     }
 
-    /* OFFRES : 2 COLONNES SUR MOBILE */
+    /* OFFRES : 2 COLONNES */
     .offers {
         padding: 40px 0;
     }
@@ -1528,7 +1523,6 @@ nav a:hover::after {
         margin-bottom: 15px;
     }
 
-    /* Réalisations */
     .realisations {
         padding: 40px 0;
     }
@@ -1561,7 +1555,6 @@ nav a:hover::after {
         height: 150px;
     }
 
-    /* Trust section */
     .trust-cta-section {
         padding: 40px 0;
     }
@@ -1623,7 +1616,7 @@ nav a:hover::after {
         font-size: 16px;
     }
 
-    /* FOOTER : 2 COLONNES SUR MOBILE (NEWSLETTER INCLUSE) */
+    /* FOOTER : 2 COLONNES */
     .footer {
         padding: 40px 0 20px;
     }
@@ -1694,57 +1687,103 @@ nav a:hover::after {
     }
 }
 
-/* Petit mobile (max-width 480px) - 1 colonne pour tout */
+/* Petit mobile - AUSSI 2 COLONNES (modification clé) */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 22px;
     }
     
-    /* Services - 1 colonne */
+    /* SERVICES : 2 COLONNES sur petit mobile */
     .services-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
     
     .service-card {
-        padding: 12px;
+        padding: 10px 6px;
+    }
+    
+    .service-icon {
+        font-size: 16px;
+    }
+    
+    .service-card h3 {
+        font-size: 10px;
+    }
+    
+    .service-card p {
+        font-size: 8px;
+    }
+    
+    .service-btn {
+        font-size: 8px;
+        padding: 3px 8px;
     }
 
-    /* Offres - 1 colonne */
+    /* OFFRES : 2 COLONNES sur petit mobile */
     .offers-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .offer-card {
-        padding: 12px;
+        padding: 10px 6px;
+    }
+    
+    .offer-card h3 {
+        font-size: 12px;
+    }
+    
+    .price {
+        font-size: 13px;
     }
     
     .offer-card li {
-        text-align: left;
-    }
-
-    /* Footer - 1 colonne */
-    .footer-grid {
-        grid-template-columns: 1fr;
+        font-size: 9px;
         text-align: center;
     }
-
-    .footer-col h4::after {
-        left: 50%;
-        transform: translateX(-50%);
+    
+    .offer-btn {
+        font-size: 9px;
+        padding: 5px 8px;
     }
 
-    .footer-social {
-        justify-content: center;
+    /* FOOTER : 2 COLONNES sur petit mobile */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-
+    
+    .footer-col h4 {
+        font-size: 13px;
+    }
+    
+    .footer-description {
+        font-size: 9px;
+    }
+    
+    .footer-social a {
+        width: 25px;
+        height: 25px;
+        font-size: 11px;
+    }
+    
     .footer-col ul li a {
-        justify-content: center;
+        font-size: 9px;
     }
-
+    
     .footer-contact li {
-        justify-content: center;
+        font-size: 9px;
+    }
+    
+    .newsletter p {
+        font-size: 9px;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 9px;
+        padding: 5px 6px;
     }
 
     .final-stats {
