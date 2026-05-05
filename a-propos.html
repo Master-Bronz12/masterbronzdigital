@@ -95,7 +95,7 @@
         }
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             margin-top: 50px;
         }
@@ -111,7 +111,7 @@
             transform: translateY(-10px);
         }
         
-        /* Conteneur d'image réduit et mieux adapté */
+        /* Conteneur d'image */
         .team-image {
             height: 200px;
             width: 200px;
@@ -162,7 +162,7 @@
             font-size: 13px;
         }
         
-        /* ========== RESPONSIVE - 2 COLONNES SUR TOUS LES ÉCRANS ========== */
+        /* ========== RESPONSIVE - 2 COLONNES SUR MOBILE ========== */
         
         /* Tablette */
         @media (max-width: 992px) {
@@ -180,6 +180,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
+            /* Équipe : 2 colonnes sur tablette */
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
@@ -248,13 +249,13 @@
                 line-height: 1.4;
             }
             
-            /* Équipe : 2 colonnes sur mobile */
+            /* ÉQUIPE : 2 COLONNES SUR MOBILE */
             .team-section {
                 padding: 50px 0;
             }
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
+                gap: 15px;
             }
             .team-image {
                 height: 120px;
@@ -279,7 +280,7 @@
             }
         }
         
-        /* Petit mobile */
+        /* Petit mobile - 2 colonnes compactes */
         @media (max-width: 480px) {
             .about-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -312,17 +313,18 @@
                 font-size: 9px;
             }
             
+            /* ÉQUIPE : 2 COLONNES sur petit mobile */
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+                gap: 12px;
             }
             .team-image {
-                height: 90px;
-                width: 90px;
+                height: 100px;
+                width: 100px;
                 margin: 12px auto 0;
             }
             .team-card h4 {
-                font-size: 11px;
+                font-size: 12px;
             }
             .team-card p {
                 font-size: 9px;
@@ -330,14 +332,21 @@
             }
         }
         
-        /* Très petit mobile - 1 seule colonne */
+        /* Très petit mobile - 2 colonnes maximum */
         @media (max-width: 380px) {
             .team-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
             }
             .team-image {
-                height: 140px;
-                width: 140px;
+                height: 90px;
+                width: 90px;
+            }
+            .team-card h4 {
+                font-size: 11px;
+            }
+            .team-card p {
+                font-size: 8px;
             }
         }
     </style>
@@ -420,7 +429,7 @@
         </div>
     </section>
 
-    <!-- Notre équipe avec photos - images en cercle -->
+    <!-- Notre équipe avec photos - 2 colonnes sur mobile -->
     <section class="team-section">
         <div class="container">
             <div class="section-header">
@@ -454,11 +463,11 @@
                         <img src="./image/kone.jpeg" alt="KONE ANGE ST PATRICK">
                     </div>
                     <h4>KONE ANGE ST PATRICK</h4>
-                    <p>Développeur Frontend & Backend</p>
+                    <p>Développeur Full Stack</p>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="./image/" alt="KONE ANGE ST PATRICK">
+                        <img src="./image/richard.jpeg" alt="KOUAME RICHARD">
                     </div>
                     <h4>KOUAME RICHARD</h4>
                     <p>Développeur Frontend</p>
@@ -531,9 +540,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Master Bronz Digital. Tous droits réservés.</p>
                 <div class="footer-legal">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">CGV</a>
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique.html">Politique de confidentialité</a>
+                    <a href="cgv.html">CGV</a>
                 </div>
             </div>
         </div>
